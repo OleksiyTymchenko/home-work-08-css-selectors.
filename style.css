@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Roboto:wght@100;300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  background-color: #3b3f45;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+p {
+}
+h1 {
+}
+h2 {
+  font-size: 24px;
+}
+
+.button {
+}
+
+.container {
+  width: 100%;
+  max-width: 535px;
+  margin: 0 auto;
+}
+
+/*======================== title ====================================*/
+
+.list-title {
+  background-color: #4a4f56;
+  color: #ff8984;
+  text-align: center;
+  padding: 20px 0 15px;
+  margin-bottom: 20px;
+}
+
+.explanation {
+  font-size: 16px;
+}
+/*============================ list ==================================*/
+li .list__item {
+  background-color: #88839e;
+  border-top: 3px solid #88839e;
+  border-bottom: 3px solid #88839e;
+  padding: 15px;
+  color: #fff;
+  display: flex;
+  align-items: baseline;
+}
+
+li:nth-child(even) > .list__item {
+  background-color: #7a7593;
+}
+.list-explanations {
+  font-size: 11px;
+}
+
+/*===========================list events=======================*/
+.list__item:hover {
+  background-color: #625e77;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.list__item:active,
+li:nth-child(even) > .list__item:active {
+  background-color: red;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+input {
+  content: url(./img/box.png);
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+}
+
+input:checked {
+  content: url(./img/checked.png);
+  color: #fff;
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+}
+:checked + p {
+  text-decoration: line-through;
+}
+:checked ~ span {
+  text-decoration: line-through;
+}
+
+.list__item:focus {
+  background-color: black;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+.list__item p::before:active {
+  content: url(./img/checked.png);
+  color: #fff;
+  height: 5px;
+  width: 5px;
+  margin-right: 15px;
+}
+
+/*======================== finish =============================*/
+.finish {
+  background-color: #4a4f56;
+  padding: 15px;
+  margin-top: 45px;
+  text-align: center;
+  color: #ff8984;
+}
